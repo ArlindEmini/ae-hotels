@@ -2,14 +2,12 @@ import React from "react";
 
 import logo from "../../assets/logo.png";
 import user from "../../assets/user.jpg";
-import bookmark from "../../assets/bookmark.svg";
-
-import search from "../../assets/magnifying-glass.svg";
-import chat from "../../assets/chat.svg";
 
 import { ReactComponent as BookMark } from "../../assets/bookmark.svg";
 import { ReactComponent as Search } from "../../assets/magnifying-glass.svg";
 import { ReactComponent as Chat } from "../../assets/chat.svg";
+
+import { BiSearchAlt2 } from "react-icons/all";
 
 import "./Header.scss";
 
@@ -25,7 +23,7 @@ const Header = () => {
         />
         <button className="search__button">
           {/* <img src={search} alt="sea" className="search__icon" /> */}
-          <Search />
+          <BiSearchAlt2 />
         </button>
       </form>
       <div className="user-nav">
