@@ -11,6 +11,10 @@ export const setItemText = (text) => ({
 });
 
 export const setItemPic = (pic) => ({
-  type: screenConstants.ADD_ITEM_TEXT,
+  type: screenConstants.ADD_ITEM_PIC,
   payload: pic,
+});
+
+export const togglePopup = () => ({
+  type: screenConstants.TOGGLE_POPUP,
 });
