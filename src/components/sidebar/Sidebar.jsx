@@ -6,30 +6,52 @@ import { ReactComponent as HomeIcon } from "../../assets/home.svg";
 import { AiFillHome, GiAirplaneDeparture, FaKey, FiMap } from "react-icons/all";
 
 const Sidebar = () => {
+  const screenshots = [
+    {
+      id: 1,
+      screen: "OG Documentation",
+    },
+    {
+      id: 2,
+      screen: "OG Blog",
+    },
+    {
+      id: 3,
+      screen: "OG Shop",
+    },
+    {
+      id: 4,
+      screen: "OG Shop | Home",
+    },
+  ];
+  const idd = 5;
+
+  console.log(screenshots[0].id);
+
   return (
     <div className="sidebar">
       <ul className="side-nav">
         <li className="side-nav__item">
-          <div className="side-bar__link">
-            <AiFillHome />
+          <div className="side-nav__link">
+            <AiFillHome className="side-nav__icon" />
             <span>Hotel</span>
           </div>
         </li>
 
         <li className="side-nav__item">
-          <div className="side-bar__link">
+          <div className="side-nav__link">
             <GiAirplaneDeparture />
             <span>Flight</span>
           </div>
         </li>
         <li className="side-nav__item">
-          <div className="side-bar__link">
+          <div className="side-nav__link">
             <FaKey />
             <span>Car Rental</span>
           </div>
         </li>
         <li className="side-nav__item">
-          <div className="side-bar__link">
+          <div className="side-nav__link">
             <FiMap />
             <span>Tour</span>
           </div>
