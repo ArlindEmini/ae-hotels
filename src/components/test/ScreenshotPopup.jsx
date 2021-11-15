@@ -66,13 +66,13 @@ const ShopScreenShots = () => {
     return (
       <div className="screenshot_popup">
         <div className="screenshot_popup_header">
-          <h6>{idredux}</h6>
+          <h6>{textredux}</h6>
           <AiFillCloseCircle className="close_popup" onClick={showPopup} />
         </div>
         <ModalImage
           className="popup_img"
-          small={textredux}
-          large={textredux}
+          small={picredux}
+          large={picredux}
           alt=""
         />
         <p>
@@ -94,7 +94,6 @@ const ShopScreenShots = () => {
   // }, [screnid]);
 
   const myfunc = (i, s, sc) => {
-    // console.log("id ", i, " scrennnnn", s, "scren footp", sc);
     showPopup();
     dispatch(setItemId(i));
     dispatch(setItemText(s));

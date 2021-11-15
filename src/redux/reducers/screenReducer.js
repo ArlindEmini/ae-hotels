@@ -4,6 +4,7 @@ const initialstate = {
   id: 0,
   text: "",
   pic: "",
+  hidden: true,
 };
 
 export default (state = initialstate, action) => {
@@ -22,6 +23,12 @@ export default (state = initialstate, action) => {
       return {
         ...state,
         pic: action.payload,
+      };
+
+    case screenConstants.TOGGLE_POPUP:
+      return {
+        ...state,
+        hidden: !state.hidden,
       };
   }
   return state;
