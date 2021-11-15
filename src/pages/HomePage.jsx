@@ -15,7 +15,7 @@ const HomePage = () => {
         <HotelView />
       </div>
 
-      <ScreenshotPopup />
+      {/* <ScreenshotPopup /> */}
     </div>
   );
 };

@@ -31,7 +31,7 @@ const Sidebar = () => {
   return (
     <div className="sidebar">
       <ul className="side-nav">
-        <li className="side-nav__item">
+        <li className="side-nav__item active">
           <div className="side-nav__link">
             <AiFillHome className="side-nav__icon" />
             <span>Hotel</span>
@@ -40,19 +40,19 @@ const Sidebar = () => {
 
         <li className="side-nav__item">
           <div className="side-nav__link">
-            <GiAirplaneDeparture />
+            <GiAirplaneDeparture className="side-nav__icon" />
             <span>Flight</span>
           </div>
         </li>
         <li className="side-nav__item">
           <div className="side-nav__link">
-            <FaKey />
+            <FaKey className="side-nav__icon" />
             <span>Car Rental</span>
           </div>
         </li>
         <li className="side-nav__item">
           <div className="side-nav__link">
-            <FiMap />
+            <FiMap className="side-nav__icon" />
             <span>Tour</span>
           </div>
         </li>
